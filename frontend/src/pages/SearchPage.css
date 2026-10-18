@@ -1,0 +1,86 @@
+.sp-topbar { background:var(--green-dark); padding:18px 40px; }
+.sp-topbar-inner { max-width:1400px; margin:0 auto; display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+.sp-search-bar { display:flex; align-items:center; background:white; border-radius:40px; padding:5px 5px 5px 18px; gap:10px; max-width:680px; flex:1; }
+.sp-loc { font-size:0.82rem; font-weight:600; color:var(--green-main); white-space:nowrap; padding-right:12px; border-right:1px solid var(--gray-200); }
+.sp-city-select { font-size:0.82rem; font-weight:600; color:var(--green-main); white-space:nowrap; padding:6px 8px 6px 4px; border:none; border-right:1px solid var(--gray-200); background:transparent; cursor:pointer; outline:none; }
+.sp-clear-x { background:none; border:none; color:var(--gray-400); cursor:pointer; padding:4px; display:flex; align-items:center; }
+.sp-clear-x:hover { color:var(--gray-800); }
+.sp-search-bar input { flex:1; border:none; outline:none; font-family:var(--font-body); font-size:0.92rem; color:var(--gray-800); }
+.sp-search-bar button { background:var(--green-main); color:white; border:none; border-radius:30px; padding:9px 20px; font-family:var(--font-body); font-weight:600; font-size:0.84rem; cursor:pointer; white-space:nowrap; transition:var(--transition); }
+.sp-search-bar button:hover { background:var(--green-dark); }
+.sp-nearme-btn { display:flex; align-items:center; background:white; border:1.5px solid var(--gray-200); border-radius:30px; padding:10px 18px; font-family:var(--font-body); font-weight:600; font-size:0.84rem; color:var(--green-dark); cursor:pointer; transition:var(--transition); white-space:nowrap; }
+.sp-nearme-btn:hover { border-color:var(--green-main); }
+.sp-nearme-btn:disabled { opacity:0.6; cursor:default; }
+
+.sp-layout { display:flex; gap:22px; max-width:1400px; margin:0 auto; padding:22px 40px 50px; align-items:flex-start; }
+
+.sp-sidebar { width:248px; flex-shrink:0; background:white; border-radius:var(--radius-md); padding:22px; box-shadow:var(--shadow-sm); position:sticky; top:88px; }
+.sp-sidebar h3 { font-family:var(--font-display); font-size:1.05rem; color:var(--green-dark); margin-bottom:18px; }
+.sf-section { margin-bottom:22px; border-bottom:1px solid var(--gray-100); padding-bottom:18px; }
+.sf-section:last-child { border-bottom:none; margin-bottom:0; }
+.sf-section h4 { font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--gray-400); margin-bottom:9px; }
+.sf-opt { display:flex; align-items:center; justify-content:space-between; padding:7px 9px; border-radius:var(--radius-sm); cursor:pointer; font-size:0.85rem; color:var(--gray-600); transition:var(--transition); margin-bottom:2px; }
+.sf-opt:hover,.sf-opt.active { background:var(--green-pale); color:var(--green-main); }
+.sf-opt.active { font-weight:700; }
+.sf-cnt { background:var(--gray-100); border-radius:20px; padding:1px 7px; font-size:0.7rem; font-weight:600; color:var(--gray-400); }
+.sf-toggle { display:flex; align-items:center; gap:9px; font-size:0.85rem; color:var(--gray-600); padding:5px 0; cursor:pointer; }
+.sf-toggle input { accent-color:var(--green-main); }
+.sf-range { width:100%; accent-color:var(--green-main); margin-bottom:5px; }
+.sf-range-lbl { font-size:0.78rem; color:var(--gray-400); }
+
+.sp-results { flex:1; min-width:0; }
+.sp-results-hdr { display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:14px; flex-wrap:wrap; gap:10px; }
+.sp-results-hdr h2 { font-family:var(--font-display); font-size:1.35rem; color:var(--green-dark); margin-bottom:3px; font-variant-numeric:lining-nums; font-feature-settings:"lnum" 1; }
+.sp-results-hdr p { font-size:0.82rem; color:var(--gray-400); }
+.sp-controls { display:flex; align-items:center; gap:9px; }
+.sp-sort { border:1.5px solid var(--gray-200); border-radius:var(--radius-sm); padding:8px 11px; font-family:var(--font-body); font-size:0.83rem; color:var(--gray-600); outline:none; cursor:pointer; }
+.sp-view-toggle { display:flex; border:1.5px solid var(--gray-200); border-radius:var(--radius-sm); overflow:hidden; }
+.sp-view-toggle button { border:none; background:white; padding:7px 11px; cursor:pointer; font-size:0.95rem; transition:var(--transition); }
+.sp-view-toggle button.active { background:var(--green-main); color:white; }
+
+.sp-pills { display:flex; flex-wrap:wrap; gap:7px; margin-bottom:18px; }
+.sp-pill { border:1.5px solid var(--gray-200); background:white; border-radius:20px; padding:5px 15px; font-family:var(--font-body); font-size:0.8rem; font-weight:500; color:var(--gray-600); cursor:pointer; transition:var(--transition); }
+.sp-pill:hover { border-color:var(--green-main); color:var(--green-main); }
+.sp-pill.active { background:var(--green-main); border-color:var(--green-main); color:white; }
+
+.sp-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+.sp-grid.list-view { grid-template-columns:1fr; }
+.sp-grid.list-view .sp-card { display:flex; }
+.sp-grid.list-view .sp-card-img { width:170px; aspect-ratio:3/2; height:auto; align-self:flex-start; flex-shrink:0; border-radius:0; overflow:hidden; }
+
+.sp-card { cursor:pointer; }
+.sp-card-img { height:155px; background:linear-gradient(135deg,var(--green-pale),#b8e4c8); display:flex; align-items:center; justify-content:center; position:relative; font-size:3.4rem; }
+.deal-tag { position:absolute; top:9px; left:9px; background:rgba(30,92,58,0.88); color:white; font-size:0.66rem; font-weight:700; padding:3px 9px; border-radius:20px; }
+.open-tag { position:absolute; top:9px; right:9px; font-size:0.68rem; font-weight:600; padding:3px 8px; border-radius:20px; }
+.open-tag.open    { background:rgba(0,201,107,0.15); color:#00c96b; }
+.open-tag.closing { background:rgba(245,166,35,0.15); color:#f5a623; }
+.open-tag.closed  { background:rgba(229,62,62,0.15);  color:var(--red); }
+
+.sp-card-body { padding:15px; }
+.sp-card-top { display:flex; gap:5px; margin-bottom:7px; flex-wrap:wrap; }
+.sp-name-row { display:flex; align-items:flex-start; justify-content:space-between; gap:7px; margin-bottom:5px; }
+.sp-name-row h3 { font-family:var(--font-display); font-size:1rem; color:var(--green-dark); flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.sp-name-row span { font-size:0.83rem; font-weight:700; white-space:nowrap; }
+.sp-desc { font-size:0.79rem; color:var(--gray-400); line-height:1.55; margin-bottom:6px; }
+.sp-addr { font-size:0.77rem; color:var(--gray-400); margin-bottom:3px; }
+.sp-rev  { font-size:0.75rem; color:var(--gray-400); margin-bottom:12px; }
+.sp-card-actions { display:flex; gap:7px; }
+.sp-card-actions .btn-outline,.sp-card-actions .btn-primary { flex:1; justify-content:center; font-size:0.8rem !important; padding:8px 10px !important; }
+
+.sp-empty { grid-column:1/-1; text-align:center; padding:60px 20px; }
+.sp-empty span { font-size:3rem; display:block; margin-bottom:12px; }
+.sp-empty h3 { font-family:var(--font-display); color:var(--gray-600); margin-bottom:7px; }
+.sp-empty p { color:var(--gray-400); font-size:0.88rem; }
+
+@media(max-width:900px){
+  /* Instead of hiding the Filters sidebar entirely (which made "Verified
+     Only" impossible to reach on mobile), reflow it into a compact
+     horizontal bar above the results — same controls, no sticky sidebar. */
+  .sp-layout{ flex-direction:column; padding:18px 16px 40px; }
+  .sp-sidebar{ width:100%; position:static; padding:14px 16px; }
+  .sp-sidebar h3{ display:none; }
+  .sf-section{ margin-bottom:0; border-bottom:none; padding-bottom:0; display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  .sf-section h4{ margin-bottom:0; }
+  .sp-grid{grid-template-columns:1fr;}
+  .sp-topbar{padding:14px 16px;}
+}
